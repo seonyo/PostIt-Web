@@ -14,7 +14,7 @@ const Main: React.FC = () => {
   }
 
   const hanldeWriteBtn = () =>{
-    // navigate('')
+    navigate('/qr')
   }
 
   return (
