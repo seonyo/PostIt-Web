@@ -1,0 +1,126 @@
+/* @font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.wrap {
+  background-color: #FFE16F;
+  position: relative;
+  width: 100%;
+}
+
+
+.LogoText{
+  height: 4%;
+  margin-left: 5%;
+  position: relative;
+  top: 9%;
+}
+
+.viewGallery{
+  position: absolute;
+  margin-left: 86%;
+  font-size: 30px;
+  margin-top: 2.5%;
+  color: #12619C;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.content {
+  width: 90%;
+  height: 75%;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%; 
+  display: flex;
+}
+
+
+.mainLogo{
+  height: 75%;
+  margin-left: 20%;
+  margin-top: 8%;
+}
+
+.POST,
+.ContentTitle{
+  height: 25%;
+  margin-left: 15%;
+  margin-top: 12%;
+}
+
+.ContentTitle,
+.explainContent{
+  position: absolute;
+  margin-top: 27%;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.explainContent{
+  margin-top: 32%;
+  margin-left: 15%;
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.secondContent{
+  display: flex;
+  text-align: center;
+  
+}
+.h1{
+  font-size: 100px;
+  height: 10%;
+  margin-top: 70%;
+  margin-left: 15%;
+  text-align: left;
+  line-height: 170%;
+  letter-spacing: 13px;
+  color: rgba(35, 24, 21, 0.8);
+}
+.hand,
+.contentPr{
+  position: absolute;
+  margin-left: 53%;
+  margin-top: 55%;
+  
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.contentPr{
+  margin-top: 85%;
+  height: 4%;
+  text-align: left;
+  margin-left: 15%;
+  font-size: 40px;
+  line-height: 80px;
+  font-weight: 100;
+  color: rgba(35, 24, 21, 0.8);
+}
+
+.writeBtn{
+  
+  margin-top: 40%;
+  margin-left: 15%;
+  height: 8%;
+  border-radius: 16px;
+  border: none;
+  background-color: #12619C;
+  color: #fff;
+  font-size: 35px;
+  width: 23%;
+}
