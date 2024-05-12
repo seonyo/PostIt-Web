@@ -1,0 +1,44 @@
+.wrap{
+  height: 6%;
+  text-align: center;
+}
+
+.Logo{
+  margin-top: 3%;
+}
+.content{
+  font-size: 25px;
+  margin-top: 1.5%;
+  color: rgba(0, 0, 0, 0.83);
+}  
+
+.back {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+
+.nav{
+  display: flex;
+  color: #12619C;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 84%;
+}
+
+.home{
+  margin-right: 8%;
+}
+
+.home,
+.write{
+  margin-top: 15%;
+}
+
+.swiper{
+  background-color: aqua;
+  font-size: 50px;
+}
+
