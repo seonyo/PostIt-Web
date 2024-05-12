@@ -4,9 +4,25 @@ import back from '../../assets/galleryBackground.svg'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import {ref, child, get, DataSnapshot, onValue} from "firebase/database"
+import {db} from "../../firebase/config"
 
 const Gallery: React.FC = () => {
+
+  useEffect(() => {
+    listenForChanges();
+  }, []);
+
+  const listenForChanges = () => {
+    const dbRef = ref(db, "/postit");
+    onValue(dbRef, (DataSnapshot) => {
+      const data = DataSnapshot.val();
+      console.log(data);  // data에 값이 있음
+    })
+  }
+
   return (
     <div className={styles.wrap}>
       <img src={back} className={styles.back} />
