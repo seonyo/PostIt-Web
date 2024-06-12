@@ -1,15 +1,23 @@
-import styles from '../../css/Gallery/Gallery.module.css'
-import Logo from '../../assets/galleryLogo.svg'
-import back from '../../assets/galleryBackground.svg'
-// Import Swiper React components
+import styles from '../../css/Gallery/Gallery.module.css';
+import logo from '../../assets/galleryLogo.svg';
+import { useState, useEffect } from 'react';
+import { ref, onValue } from "firebase/database";
+import { db } from "../../firebase/config";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import React, { useEffect } from 'react';
+import { Grid, Pagination } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import 'swiper/css/scrollbar';
 
-import {ref, child, get, DataSnapshot, onValue} from "firebase/database"
-import {db} from "../../firebase/config"
+interface Postit {
+  content: string;
+  img: string;
+  name: string;
+}
 
 const Gallery: React.FC = () => {
+  const [data, setData] = useState<Postit[]>([]);
 
   useEffect(() => {
     listenForChanges();
@@ -19,30 +27,41 @@ const Gallery: React.FC = () => {
     const dbRef = ref(db, "/postit");
     onValue(dbRef, (DataSnapshot) => {
       const data = DataSnapshot.val();
-      console.log(data);  // data에 값이 있음
-    })
-  }
+      setData(Object.values(data));
+    });
+  };
 
   return (
-    <div className={styles.wrap}>
-      <img src={back} className={styles.back} />
+    <div className={styles.container}>
       <div className={styles.nav}>
         <p className={styles.home}>HOME</p>
         <p className={styles.write}>포스트잇 작성하기</p>
       </div>
-      <img src={Logo} className={styles.Logo} />
+      <img src={logo} className={styles.title} />
       <p className={styles.content}>여러분들의 소중한 마음이 담긴 포스트잇을 모아놓은 공간입니다.</p>
 
       <Swiper
-        style={{height:'1062px'}}
-        className={styles.swiper}
-        spaceBetween={50}
-        slidesPerView={1}
+        slidesPerView={5}
+        grid={{
+          rows: 2,
+        }}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Grid, Pagination]}
+        
+        className={styles.slider}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        {data.map((item, index) => (
+          <SwiperSlide key={index} className={styles.post}>
+            <div className={styles.img}>
+              <img src={item.img} className={styles.img1} />
+              <p className={styles.postContent}>{item.content}</p>
+            </div>
+            <p className={styles.name}>{item.name}</p>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

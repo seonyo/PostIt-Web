@@ -7,7 +7,7 @@ const QR: React.FC = () => {
   const navigate = useNavigate()
 
   const handleviewGallery = ()=>{
-    // navigate('')
+    navigate('/gallery')
   }
 
   return (
