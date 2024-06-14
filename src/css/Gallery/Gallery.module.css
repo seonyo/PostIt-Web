@@ -21,26 +21,30 @@
   display: flex;
   text-align: center;
   height: 1vh;
-  margin-left: 85vw;
+  margin-left: 80vw;
   color: #12619C;
 }
 
 .home,
-.write {
+.write,
+.search {
   position: relative;
   margin-top: 4vh;
   font-size: 20px;
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.home {
+.home,
+.write {
   margin-right: 3vh;
 }
 
 
 .post {
-  margin-bottom: -11vh;
+  margin-bottom: -13vh;
+  margin-top: 2.5vh;
 }
 
 
@@ -58,10 +62,17 @@
   z-index: 1;
 }
 
+.name{
+  color: #abababa2;
+  font-size: 13px;
+  top: -23.5vh;
+}
 .slider{
-  position: absolute;
-  top: -94vh;
+  position: relative;
+  top: -96vh;
   left: 0;
   z-index: 1;
 }
+
+
 
