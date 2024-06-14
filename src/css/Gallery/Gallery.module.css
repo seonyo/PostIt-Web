@@ -1,44 +1,78 @@
-.wrap{
-  height: 6%;
+.container {
+  background-image: url("../../assets/back.svg");
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.Logo{
-  margin-top: 3%;
-}
-.content{
-  font-size: 25px;
-  margin-top: 1.5%;
-  color: rgba(0, 0, 0, 0.83);
-}  
-
-.back {
-  position: absolute;
-  left: 0;
-  z-index: -1;
+.title {
+  height: 6vh;
+  margin-top: 10vh;
 }
 
+.content {
+  font-size: 20px;
+  margin-top: 3vh;
+}
 
-.nav{
+.nav {
   display: flex;
+  text-align: center;
+  height: 1vh;
+  margin-left: 80vw;
   color: #12619C;
-  text-decoration: underline;
-  font-size: 30px;
-  font-weight: bold;
-  margin-left: 84%;
-}
-
-.home{
-  margin-right: 8%;
 }
 
 .home,
-.write{
-  margin-top: 15%;
+.write,
+.search {
+  position: relative;
+  margin-top: 4vh;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.swiper{
-  background-color: aqua;
-  font-size: 50px;
+.home,
+.write {
+  margin-right: 3vh;
 }
+
+
+.post {
+  margin-bottom: -13vh;
+  margin-top: 2.5vh;
+}
+
+
+.img1 {
+  position: relative;
+  height: 32vh;
+}
+
+.postContent,
+.name {
+  margin-left: 5vw;
+  position: relative;
+  top: -24vh;
+  width: 10vw;
+  z-index: 1;
+}
+
+.name{
+  color: #abababa2;
+  font-size: 13px;
+  top: -23.5vh;
+}
+.slider{
+  position: relative;
+  top: -96vh;
+  left: 0;
+  z-index: 1;
+}
+
+
 

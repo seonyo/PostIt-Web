@@ -1,0 +1,449 @@
+[
+    {
+        "name": "Post It!",
+        "concept": "쌍따옴표",
+        "team1": "박화경,",
+        "team2": "정선영,",
+        "team3": "조혜원",
+        "type": "앱 웹사이트",
+        "image": "../../src/assets/logo/Post It.svg"
+    },
+    {
+        "name": "피니(pinny)",
+        "concept": "쉼표",
+        "team1": "박세연, ",
+        "team2": "노하은, ",
+        "team3": "고은, ",
+        "team4": "정선영, ",
+        "team5": "김민지",
+        "type": "앱",
+        "image": "../../src/assets/logo/피니(pinny).png"
+    },
+    {
+        "name": "mtom",
+        "concept": "쌍따옴표",
+        "team1": "정선영, ",
+        "team2": "임지현, ",
+        "team3": "최보람, ",
+        "team4": "이해원, ",
+        "team5": "황혜연",
+        "type": "앱",
+        "image": "../../src/assets/logo/mtom.svg"
+    },
+    {
+        "name": "시험메이트",
+        "concept": "온점",
+        "team1": "임지현, ",
+        "team2": "박희현, ",
+        "team3": "이지수, ",
+        "team4": "황슬기, ",
+        "team5": "황채원",
+        "type": "앱",
+        "image": "../../src/assets/logo/시험메이트.png"
+    },
+        {
+        "name": "위드미어(withmere)",
+        "concept": "쉼표",
+        "team1": "김혜승, ",
+        "team2": "이진선, ",
+        "team3": "김선희, ",
+        "team4": "김지현, ",
+        "team5": "이지인, ",
+        "team6": "윤호주",
+        "type": "앱",
+        "image": "../../src/assets/logo/위드미어(withmere).png"
+    },
+    {
+        "name": "Pinata Party",
+        "concept": "느낌표",
+        "team1": "문혜빈, ",
+        "team2": "김한솔, ",
+        "team3": "강지윤, ",
+        "team4": "한수예, ",
+        "type": "게임",
+        "image": "../../src/assets/logo/Pinata Party.png"
+    },
+    {
+        "name": "Curl Fume",
+        "concept": "쉼표",
+        "team1": "양미성, ",
+        "team2": "김한솔, ",
+        "team3": "한수예, ",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/Curl Fume.png"
+    },
+    {
+        "name": "달빛타로",
+        "concept": "쌍따옴표",
+        "team1": "문혜빈, ",
+        "team2": "임소영, ",
+        "team3": "한수예, ",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/달빛타로.png"
+    },
+    {
+        "name": "꿈이야, 생시야?",
+        "concept": "쌍따옴표",
+        "team1": "김현지, ",
+        "team2": "장지안, ",
+        "team3": "최재현 ",
+        "type": "앱",
+        "image": "../../src/assets/logo/꿈이야,생시야.png"
+    },
+    {
+        "name": "Mydomitory",
+        "concept": "쉼표",
+        "team1": "임효진,",
+        "team2": "박화경",
+        "type": "앱",
+        "image": "../../src/assets/logo/Mydomitory.svg"
+    },
+    {
+        "name": "쉐어영수증",
+        "concept": "물음표",
+        "team1": "이진선,",
+        "team2": "김혜승,",
+        "team3": "김선희,",
+        "team4": "노현지,",
+        "team5": "김수연,",
+        "team6": "하예림",
+        "type": "앱",
+        "image": "../../src/assets/logo/쉐어영수증.png"
+    },
+    {
+        "name": "선생님 몰래 춤추기",
+        "concept": "느낌표",
+        "team1": "정선영,",
+        "team2": "임지현,",
+        "team3": "최재현",
+        "type": "게임",
+        "image": "../../src/assets/logo/선생님 몰래 춤추기.svg"
+    },
+    {
+        "name": "롤링마인드",
+        "concept": "쌍따옴표",
+        "team1": "김민서,",
+        "team2": "김혜승,",
+        "team3": "이진선,",
+        "team4": "이지연,",
+        "team5": "윤호주,",
+        "team6": "강효림",
+        "type": "앱",
+        "image": "../../src/assets/logo/롤링마인드.png"
+    },
+    {
+        "name": "트립코드(Tripcord)",
+        "concept": "온점",
+        "team1": "이현진,",
+        "team2": "김혜승,",
+        "team3": "노현지,",
+        "team4": "김수연,",
+        "team5": "하예림,",
+        "team6": "박효정",
+        "type": "앱",
+        "image": "../../src/assets/logo/트립코드(Tripcord).png"
+    },
+    {
+        "name": "고민(Go mean)",
+        "concept": "물음표",
+        "team1": "노하은,",
+        "team2": "임지현,,",
+        "team3": "노승주,",
+        "team4": "김서연,",
+        "team5": "박효정,",
+        "team6": "유지민",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/고민(Go mean).png"
+    },
+    {
+        "name": "달콤조각",
+        "concept": "쉼표",
+        "team1": "김예향",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/달콤조각.png"
+    },
+    {
+        "name": "오! 은영체제",
+        "concept": "물음표",
+        "team1": "최보람,",
+        "team2": "김하은,",
+        "team3": "양가윤,",
+        "team4": "이서영,",
+        "team5": "이해원,",
+        "team6": "조서현,",
+        "team7": "황혜경",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/오 은영체제.png"
+    },
+    {
+        "name": "타임캡슐",
+        "concept": "온점",
+        "team1": "양가윤,",
+        "team2": "박화경,",
+        "team3": "김하은,",
+        "team4": "이해원,",
+        "team5": "임효진",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/타임캡슐.svg"
+    },
+    {
+        "name": "미그네틱",
+        "concept": "쌍따옴표",
+        "team1": "노승주,",
+        "team2": "권지수,",
+        "team3": "김수연,",
+        "team4": "양지아,",
+        "team5": "방윤서,",
+        "team6": "유희주",
+        "type": "게임",
+        "image": "../../src/assets/logo/미그네틱.png"
+    },
+    {
+        "name": "비트나미",
+        "concept": "쌍따옴표",
+        "team1": "김민주,",
+        "team2": "김윤하,",
+        "team3": "박도연,",
+        "team4": "최지설",
+        "type": "게임",
+        "image": "../../src/assets/logo/비트나미.png"
+    },
+    {
+        "name": "말로 하세요",
+        "concept": "느낌표",
+        "team1": "이설화,",
+        "team2": "정아린,",
+        "team3": "송연우",
+        "type": "게임",
+        "image": "../../src/assets/logo/말로 하세요.png"
+    },
+    {
+        "name": "어썹(Earth up)",
+        "concept": "온점",
+        "team1": "박도연,",
+        "team2": "윤민서,",
+        "team3": "최지설,",
+        "team4": "이솔희",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/어썹(Earth-up).png"
+    },
+    {
+        "name": "GEMMI",
+        "concept": "쉼표",
+        "team1": "이설화,",
+        "team2": "이가현,",
+        "team3": "서유미",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/GEMMI.png"
+    },
+    {
+        "name": "나의 비밀을 지켜줘",
+        "concept": "느낌표",
+        "team1": "이솔희,",
+        "team2": "방민서,",
+        "team3": "윤민서,",
+        "team4": "박서은",
+        "type": "게임",
+        "image": "../../src/assets/logo/나의 비밀을 지켜줘.png"
+    },
+    {
+        "name": "미림 나락퀴즈쇼",
+        "concept": "느낌표",
+        "team1": "정아린,",
+        "team2": "오수빈,",
+        "team3": "이현지,",
+        "team4": "김민주",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/미림 나락퀴즈쇼.png"
+    },
+    {
+        "name": "감자?남자!",
+        "concept": "느낌표",
+        "team1": "권지수,",
+        "team2": "김수연,",
+        "team3": "노승주,",
+        "team4": "양지아",
+        "type": "게임",
+        "image": "../../src/assets/logo/감자_남자!.png"
+    },
+    {
+        "name": "너의 얼굴이 보고싶어",
+        "concept": "느낌표",
+        "team1": "방윤서,",
+        "team2": "유희주",
+        "type": "게임",
+        "image": "../../src/assets/logo/너의 얼굴이 보고싶어.png"
+    },
+    {
+        "name": "벼룩이",
+        "concept": "쌍따옴표",
+        "team1": "이서영,",
+        "team2": "김서연,",
+        "team3": "최보람,",
+        "team4": "황혜경",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/벼룩이.png"
+    },
+    {
+        "name": "홀로서기(LivingAlone)",
+        "concept": "쉼표",
+        "team1": "황혜경,",
+        "team2": "이지수,",
+        "team3": "박세연,",
+        "team4": "조서현,",
+        "team5": "황채원,",
+        "team6": "이유진",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/홀로서기(LivingAlone).png"
+    },
+    {
+        "name": "고봉편지",
+        "concept": "쌍따옴표",
+        "team1": "이해원,",
+        "team2": "김하은,",
+        "team3": "조서현",
+        "type": "앱",
+        "image": "../../src/assets/logo/고봉편지.png"
+    },
+    {
+        "name": "너의 오늘은",
+        "concept": "온점",
+        "team1": "이윤경,",
+        "team2": "임한별,",
+        "team3": "방민서",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/너의 오늘은.png"
+    },
+    {
+        "name": "Wevel",
+        "concept": "글로벌",
+        "team1": "양가윤,",
+        "team2": "임지현,,",
+        "team3": "박예은,",
+        "team4": "황채원",
+        "type": "앱",
+        "image": "../../src/assets/logo/Wevel.png"
+    },
+    {
+        "name": "YANU!",
+        "concept": "글로벌",
+        "team1": "조서현,",
+        "team2": "정선영,",
+        "team3": "박효정",
+        "type": "앱",
+        "image": "../../src/assets/logo/YANU!.png"
+    },
+    {
+        "name": "두런두런",
+        "concept": "글로벌",
+        "team1": "황혜경,",
+        "team2": "임효진,",
+        "team3": "강민지",
+        "type": "앱",
+        "image": "../../src/assets/logo/두런두런.png"
+    },
+    {
+        "name": "Matie",
+        "concept": "글로벌",
+        "team1": "김혜승,",
+        "team2": "김하은,",
+        "team3": "임소영",
+        "type": "앱",
+        "image": "../../src/assets/logo/Matie.png"
+    },
+    {
+        "name": "Workey",
+        "concept": "글로벌",
+        "team1": "노하은,",
+        "team2": "이지수,",
+        "team3": "문서연",
+        "type": "앱",
+        "image": "../../src/assets/logo/Workey.png"
+    },
+    {
+        "name": "Pin!tage(핀티지)",
+        "concept": "글로벌",
+        "team1": "김현지,",
+        "team2": "김지우,",
+        "team3": "김희영,",
+        "team4": "노현지",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/Pin!tage(핀티지).png"
+    },
+    {
+        "name": "Duk'z",
+        "concept": "글로벌",
+        "team1": "장지안,",
+        "team2": "황슬기,",
+        "team3": "안서연,",
+        "team4": "김민지",
+        "type": "앱",
+        "image": "../../src/assets/logo/Duk'z.png"
+    },
+    {
+        "name": "하나,둘,셋! 과거의 나에게",
+        "concept": "동아리",
+        "team1": "추다율,",
+        "team2": "윤주영,",
+        "team3": "황유진,",
+        "team4": "배주연,",
+        "team5": "송유빈,",
+        "team6": "하지민",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/하나,둘,셋! 과거의 나에게.jpg"
+    },
+    {
+        "name": "환승마블",
+        "concept": "동아리",
+        "team1": "이소리,",
+        "team2": "안효주,",
+        "team3": "구아연,",
+        "team4": "심정민,",
+        "team5": "나지수,",
+        "team6": "박수민",
+        "type": "게임",
+        "image": "../../src/assets/logo/환승마블.png"
+    },
+    {
+        "name": "이 구역의 댄싱퀸은 나야나",
+        "concept": "동아리",
+        "team1": "노하은,",
+        "team2": "박희현,",
+        "team3": "이가현,",
+        "team4": "임지현",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/이 구역의 댄싱퀸은 나야나.png"
+    },
+    {
+        "name": "난 너 없이",
+        "concept": "동아리",
+        "team1": "장하영,",
+        "team2": "양혜원,",
+        "team3": "조수빈,",
+        "team4": "백지현",
+        "type": "웹사이트",
+        "image": "../../src/assets/logo/난너없이.png"
+    },
+    {
+        "name": "이상한 미림의 나라",
+        "concept": "동아리",
+        "team1": "김세연,",
+        "team2": "김소희,",
+        "team3": "이윤경,",
+        "team4": "송연우",
+        "type": "게임",
+        "image": "../../src/assets/logo/이상한 미림의 나라.png"
+    },
+    {
+        "name": "미스토리",
+        "concept": "동아리",
+        "team1": "유희주,",
+        "team2": "나소정,",
+        "team3": "이현진,",
+        "team4": "홍효빈,",
+        "team5": "박은진,",
+        "team6": "지수연",
+        "type": "게임",
+        "image": "../../src/assets/logo/미스토리.png"
+    }
+]

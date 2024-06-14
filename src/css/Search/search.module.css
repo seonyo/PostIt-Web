@@ -1,0 +1,105 @@
+.container{
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.nav {
+  display: flex;
+  text-align: center;
+  height: 1vh;
+  margin-left: 82vw;
+  color: #12619C;
+}
+
+.home,
+.write,
+.gallery {
+  position: relative;
+  margin-top: 4vh;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.home,
+.write {
+  margin-right: 3vh;
+}
+
+.logo{
+  height: 5vh;
+  margin-top: 8vh;
+}
+
+.searchInput {
+  width: 85vw;
+  height: 3vh;
+  border-radius: 1vh;
+  background-color: #EFEFEF;
+  border: none;
+  padding: 1vw;
+  padding-left: 3vw;
+  margin-top: 5vh;
+  font-size: 20px;
+}
+
+.searchInput::placeholder {
+  color: #BCBCBC;
+  font-size: 15px;
+}
+
+.searchInput:focus {
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  color: #000;
+}
+
+.searchImg {
+  position: absolute;
+  right: 6vw;
+  margin-top: 6.5vh;
+  height: 3.5vh;
+}
+
+.wrapData{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  margin-left: 6vw;
+  margin-top: 7vh;
+  gap: 2vw;
+}
+
+.wrapContent{
+  border: solid #D9D9D9 1px;
+  width: 15.5vw;
+  height: 30.46vh;
+  border-radius: 1vh;
+}
+
+.image{
+  width: 15.5vw;
+  height: 22.4vh;
+  z-index: 100;
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  object-fit: cover;
+}
+
+.wrapText{
+  text-align: left;
+  margin-left: 0.6vw;
+  margin-top: 0.5vh;
+}
+
+.name{
+  font-size: 19px;
+}
+.teamName{
+  font-size: 13px;
+  margin-top: -26vh;
+  color: #515151;
+}
+
