@@ -2,16 +2,39 @@
 
 .container{
     position: relative;
+    background-image: url("../../assets/back.svg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .teamName{
+    position: relative;
     text-align: center;
     font-family: "Bangers", system-ui;
     font-weight: 400;
     font-style: normal;
     color: #12619C;
     letter-spacing: 1vh;
-    font-size: 100px;
-    margin-top: 8vh;
+    font-size: 80px;
+    padding: 7vh;
 }
 
+.postSlider{
+    margin-bottom: -11vh;
+}
+.slider{
+    margin-top: -92vh;
+}
+
+
+.img{
+    height: 35vh;
+}
+
+.content{
+    margin-top: -27vh;
+    margin-left: 4.5vw;
+    width: 10vw;
+}
