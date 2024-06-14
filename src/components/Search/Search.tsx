@@ -1,9 +1,9 @@
-import styles from '../../css/Search/search.module.css'
-import logo from '../../assets/CollectionLogo.svg'
-import { useNavigate } from 'react-router-dom'
-import data from "../../../data.json"
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import data from "../../../data.json";
+import styles from '../../css/Search/search.module.css';
+import logo from '../../assets/CollectionLogo.svg';
 import searchImg from '../../assets/search.svg';
-import { useEffect, useState } from 'react';
 
 interface UserData {
   name: string;
@@ -20,13 +20,13 @@ interface UserData {
 }
 
 const Search: React.FC = () => {
-  const nav = useNavigate()
-  const [userData, setUserData] = useState<UserData[]>([])
+  const nav = useNavigate();
+  const [userData, setUserData] = useState<UserData[]>([]);
   const [searchInput, setSearchInput] = useState<string>("");
 
   useEffect(() => {
-    setUserData(data)
-  }, [])
+    setUserData(data);
+  }, []);
 
   const handleSearch = () => {
     if (searchInput === "") {
@@ -42,26 +42,25 @@ const Search: React.FC = () => {
         (item.team6 && item.team6.includes(searchInput)) ||
         (item.team7 && item.team7.includes(searchInput))
       );
-      nav("/search/result", { state: { userData: filtered, inputValue: searchInput } })
+      nav("/search/result", { state: { userData: filtered, inputValue: searchInput } });
     }
   };
 
-
-  const handleSelectPage = (name: string) => {
-    localStorage.setItem("name", name);
-    nav("/select");
-  }
   const handleHome = () => {
-    nav('/')
-  }
+    nav('/');
+  };
 
   const handleWrite = () => {
-    nav('/qr')
-  }
+    nav('/qr');
+  };
 
   const handleGallery = () => {
-    nav('/gallery')
-  }
+    nav('/gallery');
+  };
+
+  const handlePostDetails = (teamName: string) => {
+    nav('/search/result', { state: { teamName } });
+  };
 
   return (
     <div className={styles.container}>
@@ -79,21 +78,21 @@ const Search: React.FC = () => {
       />
       <img src={searchImg} className={styles.searchImg} alt="search" onClick={handleSearch} />
 
-
       <div className={styles.wrapData}>
         {userData.map((item, index) => (
-          <div key={index} className={styles.wrapContent} onClick={() => handleSelectPage(item.name)}>
+          <div key={index} className={styles.wrapContent} onClick={() => handlePostDetails(item.name)}>
             <img src={item.image} alt={item.name} className={styles.image} />
-
             <div className={styles.wrapText}>
               <p className={styles.name}>{item.name}</p>
-              <p className={styles.teamName}>{item.team1} {item.team2} {item.team3} {item.team4} {item.team5} {item.team6} {item.team7}</p>
+              <p className={styles.teamName}>
+                {item.team1} {item.team2} {item.team3} {item.team4} {item.team5} {item.team6} {item.team7}
+              </p>
             </div>
           </div>
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Search;
