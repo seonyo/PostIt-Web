@@ -58,7 +58,7 @@ const SearchResult: React.FC = () => {
                 >
 
                     {posts.map((post, index) => (
-                        <SwiperSlide>
+                        <SwiperSlide className={styles.postSlider}>
                             <div key={index} className={styles.post}>
                                 <img src={post.img} className={styles.img} alt="Post" />
                                 <p className={styles.content}>{post.content}</p>
