@@ -56,7 +56,6 @@ const Gallery: React.FC = () => {
 
       <Swiper
         slidesPerView={5}
-        // slidesPerGroup={5}
         grid={{
           rows: 2,
         }}
