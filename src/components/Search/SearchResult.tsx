@@ -26,6 +26,16 @@ const SearchResult: React.FC = () => {
     const [posts, setPosts] = useState<Postit[]>([]);
     const [data, setData] = useState<Postit[]>([]);
 
+    const handleHome = () => {
+        nav('/')
+    }
+    const handleGallery = () => {
+        nav('/gallery')
+    }
+
+    const handleWrite = () => {
+        nav('/qr')
+    }
     useEffect(() => {
         listenForChanges();
     }, []);
@@ -39,10 +49,12 @@ const SearchResult: React.FC = () => {
 
             if (data) {
                 Object.keys(data)
-                    .sort((a, b) => b.localeCompare(a)) // Sort keys in descending order
+                    .sort((a, b) => b.localeCompare(a)) 
                     .forEach((key) => {
                         const { img, content, name, timestamp } = data[key];
-                        postits.push({ id: key, img, content, name, timestamp });
+                        if (name === teamName) {
+                            postits.push({ id: key, img, content, name, timestamp });
+                        }
                     });
                 setData(postits);
             } else {
@@ -52,16 +64,6 @@ const SearchResult: React.FC = () => {
     };
 
 
-    const handleHome = () => {
-        nav('/')
-    }
-    const handleGallery = () => {
-        nav('/gallery')
-    }
-
-    const handleWrite = () => {
-        nav('/qr')
-    }
     return (
         <div className={styles.container}>
             <div className={styles.nav}>
@@ -89,7 +91,7 @@ const SearchResult: React.FC = () => {
                     className={styles.slider}
                 >
 
-                    {posts.map((post, index) => (
+                    {data.map((post, index) => (
                         <SwiperSlide className={styles.postSlider}>
                             <div key={index} className={styles.post}>
                                 <img src={post.img} className={styles.img} alt="Post" />
