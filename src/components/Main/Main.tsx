@@ -10,7 +10,7 @@ const Main: React.FC = () => {
   const navigate = useNavigate()
 
   const handleViewGallery = () => {
-    // navigate('/main')
+    navigate('/gallery')
   }
 
   const hanldeWriteBtn = () =>{

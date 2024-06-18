@@ -1,6 +1,7 @@
 import styles from '../../css/QR/QR.module.css'
 import { useNavigate } from 'react-router-dom'
 import Logo from '../../assets/QrLogo.svg'
+import QRimg from '../../assets/QR.svg'
 import background from '../../assets/QrBackground.svg'
 
 const QR: React.FC = () => {
@@ -14,6 +15,7 @@ const QR: React.FC = () => {
     <div className={styles.wrap}>
       <img src={Logo} className={styles.Logo} />
       <img src={background} className={styles.background} />
+      <img src={QRimg} className={styles.QRimg}/>
 
       <p className={styles.title}>
         <span className={styles.span}>QR코드</span>를 스캔해주세요!</p>

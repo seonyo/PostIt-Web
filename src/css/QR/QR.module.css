@@ -62,3 +62,11 @@
   position: absolute;
   margin-left: 55%;
 }
+
+.QRimg{
+  position: absolute;
+  width: 45vw;
+  height: 45vh;
+  margin: 9.5vw;
+  margin-top: 28.8vh;
+}
