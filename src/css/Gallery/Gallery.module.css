@@ -60,6 +60,7 @@
   top: -24vh;
   width: 10vw;
   z-index: 1;
+  font-size: 20px;
 }
 
 .name{
@@ -67,6 +68,7 @@
   font-size: 13px;
   top: -23.5vh;
 }
+
 .slider{
   position: relative;
   top: -96vh;
