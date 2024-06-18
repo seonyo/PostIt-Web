@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase/config";
 import styles from '../../css/Search/searchResult.module.css';
+import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Grid, Pagination } from 'swiper/modules';
 import "swiper/css";
@@ -17,6 +18,7 @@ interface Postit {
 }
 
 const SearchResult: React.FC = () => {
+    const nav = useNavigate()
     const location = useLocation();
     const { teamName } = location.state || {};
     const [posts, setPosts] = useState<Postit[]>([]);
@@ -34,9 +36,23 @@ const SearchResult: React.FC = () => {
         }
     }, [teamName]);
 
+    const handleHome = () =>{
+        nav('/')
+    }
+    const handleGallery = () =>{
+        nav('/gallery')
+    }
 
+    const handleWrite = () =>{
+        nav('/qr')
+    }
     return (
         <div className={styles.container}>
+            <div className={styles.nav}>
+                <p className={styles.home} onClick={handleHome}>HOME</p>
+                <p className={styles.gallery} onClick={handleGallery}>갤러리</p>
+                <p className={styles.write} onClick={handleWrite}>작성하러가기</p>
+            </div>
             <h1 className={styles.teamName}>"{teamName}" GALLERY</h1>
             <div className={styles.posts}>
                 <Swiper
