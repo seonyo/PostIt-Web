@@ -9,6 +9,27 @@
     overflow: hidden;
 }
 
+.nav{
+    display: flex;
+    text-align: center;
+    margin-left: 83vw;
+    width: 30vw;
+    height: 4vh;
+    color: #12619C;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 3vh;
+    text-decoration: underline;
+}
+
+.home,
+.gallery,
+.write{
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+
 .teamName{
     position: relative;
     text-align: center;
@@ -18,14 +39,14 @@
     color: #12619C;
     letter-spacing: 1vh;
     font-size: 80px;
-    padding: 7vh;
+    padding: 4vh;
 }
 
 .postSlider{
     margin-bottom: -11vh;
 }
 .slider{
-    margin-top: -92vh;
+    margin-top: -91vh;
 }
 
 

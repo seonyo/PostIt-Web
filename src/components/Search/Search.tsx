@@ -42,7 +42,7 @@ const Search: React.FC = () => {
         (item.team6 && item.team6.includes(searchInput)) ||
         (item.team7 && item.team7.includes(searchInput))
       );
-      nav("/search/result", { state: { userData: filtered, inputValue: searchInput } });
+      nav("/search/Detail", { state: { userData: filtered, inputValue: searchInput } });
     }
   };
 
