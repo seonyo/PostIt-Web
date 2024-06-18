@@ -12,9 +12,11 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 interface Postit {
-    content: string;
+    id: string;
     img: string;
+    content: string;
     name: string;
+    timestamp: string;
 }
 
 const SearchResult: React.FC = () => {
@@ -22,28 +24,42 @@ const SearchResult: React.FC = () => {
     const location = useLocation();
     const { teamName } = location.state || {};
     const [posts, setPosts] = useState<Postit[]>([]);
+    const [data, setData] = useState<Postit[]>([]);
 
     useEffect(() => {
-        if (teamName) {
-            const dbRef = ref(db, "/postit");
-            onValue(dbRef, (DataSnapshot) => {
-                const data = DataSnapshot.val();
-                if (data) {
-                    const filter = Object.values(data as { [key: string]: Postit }).filter((post: Postit) => post.name === teamName)
-                    setPosts(filter)
-                }
-            });
-        }
-    }, [teamName]);
+        listenForChanges();
+    }, []);
 
-    const handleHome = () =>{
+    const listenForChanges = () => {
+        const postitRef = ref(db, '/postit');
+
+        onValue(postitRef, (snapshot) => {
+            const postits: Postit[] = [];
+            const data = snapshot.val();
+
+            if (data) {
+                Object.keys(data)
+                    .sort((a, b) => b.localeCompare(a)) // Sort keys in descending order
+                    .forEach((key) => {
+                        const { img, content, name, timestamp } = data[key];
+                        postits.push({ id: key, img, content, name, timestamp });
+                    });
+                setData(postits);
+            } else {
+                setData([]);
+            }
+        });
+    };
+
+
+    const handleHome = () => {
         nav('/')
     }
-    const handleGallery = () =>{
+    const handleGallery = () => {
         nav('/gallery')
     }
 
-    const handleWrite = () =>{
+    const handleWrite = () => {
         nav('/qr')
     }
     return (
