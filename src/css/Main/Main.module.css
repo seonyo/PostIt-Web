@@ -31,6 +31,7 @@
   font-size: 30px;
   margin-top: 2.5%;
   color: #12619C;
+  cursor: pointer;
   font-weight: bold;
   text-decoration: underline;
 }
